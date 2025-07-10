@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const map = L.map('map').setView([13.41, 122.56], 6);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
+    attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
+});
 
   // Just to confirm it's working, add a marker
   L.marker([13.41, 122.56]).addTo(map).bindPopup("Map Loaded").openPopup();
